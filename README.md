@@ -4,7 +4,7 @@ If you access any of this metadata through jsdelivr, be sure to purge the file f
 2. Enter the full path to the file, e.g. https://cdn.jsdelivr.net/gh/WazeDev/meta@main/wme-sct.json
 3. Click 'Purge Now' (it may take a couple minutes for the purge to occur)
 
-You can also use wazedev.github.io to access resources. This is likely simpler than using jsdelivr but requires using GM_xmlhttpRequest because github.io is not whitelisted in WME.
+You can also use wazedev.github.io to access resources. This is likely simpler than using jsdelivr but requires using GM_xmlhttpRequest since github.io is not whitelisted in WME. Updates pushed to the repo may take up to a minute or two before they're published to github.io.
 
 > Tip: use a random query parameter in the request URL to prevent Tampermonkey from caching results.
 
