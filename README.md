@@ -6,11 +6,13 @@ If you access any of this metadata through jsdelivr, be sure to purge the file f
 
 You can also use wazedev.github.io to access resources. This is likely simpler than using jsdelivr but requires using GM_xmlhttpRequest because github.io is not whitelisted in WME.
 
+> Tip: use a random query parameter in the request URL to prevent Tampermonkey from caching results.
+
 ```javascript
 function checkVersion() {
     GM_xmlhttpRequest({
         method: 'GET',
-        url: 'https://wazedev.github.io/meta/wme-sct.json',
+            url: `https://wazedev.github.io/meta/wme-sct.json?nocache=${Date.now()}`,
         headers: {
             Accept: 'application/json'
         },
